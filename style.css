@@ -1,0 +1,92 @@
+
+body {
+    background: hsl(0, 0%, 95%);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6% 20% 6% 20%;
+}
+
+.coluna-sedans, .coluna-suvs, .coluna-luxury {
+    display: inline-flexbox;
+    padding: 20px 30px 20px 30px;
+}
+
+.coluna-sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.coluna-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.coluna-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-align: left;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    padding: 8px 0 60px 0;
+    line-height: 22px
+}
+
+
+
+button {
+    background: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition-duration: 0.4s;
+}
+
+.bt-sedan {
+    color: hsl(31, 77%, 52%);
+}
+.bt-suv {
+    color: hsl(184, 100%, 22%);
+}
+.bt-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+
+
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
