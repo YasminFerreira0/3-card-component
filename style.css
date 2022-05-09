@@ -1,19 +1,20 @@
 
 body {
+    box-sizing: border-box;
     background: hsl(0, 0%, 95%);
 }
 
 
 .container {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex; 
     justify-content: center;
-    margin: 6% 20% 6% 20%;
+    margin: 5% 20% 6% 20%;
 }
 
 .coluna-sedans, .coluna-suvs, .coluna-luxury {
-    display: inline-flexbox;
+    display: inline-block;
     padding: 20px 30px 20px 30px;
+
 }
 
 .coluna-sedans {
@@ -36,7 +37,7 @@ body {
 
 h1 {
     color: hsl(0, 0%, 100%);
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Big Shoulders Display', cursive;
     text-align: left;
     font-weight: bold;
@@ -47,11 +48,9 @@ p {
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
     text-align: left;
-    padding: 8px 0 60px 0;
-    line-height: 22px
+    padding: 30px 5px 90px 5px;
+    line-height: 20px;
 }
-
-
 
 button {
     background: hsl(0, 0%, 95%);
@@ -60,7 +59,7 @@ button {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Lexend Deca', sans-serif;
-    border-radius: 50px;
+    border-radius: 2rem;
     border: 2px solid hsl(0, 0%, 95%);
     transition-duration: 0.4s;
 }
@@ -81,13 +80,27 @@ button:hover {
 }
 
 
-
-
 footer {
     font-size: 11px;
     text-align: center;
+    bottom: 0;
+    padding-top: 20px;
     
 }
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: grid;
+    }
+    .coluna-sedans {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .coluna-luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
 }
